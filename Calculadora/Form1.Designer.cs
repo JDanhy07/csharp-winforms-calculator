@@ -2,283 +2,281 @@
 {
     partial class Form1
     {
-        /// <summary>
-        /// Variable del diseñador necesaria.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Limpiar los recursos que se estén usando.
-        /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
+            if (disposing && (components != null)) components.Dispose();
             base.Dispose(disposing);
         }
 
         #region Código generado por el Diseñador de Windows Forms
 
-        /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_reset = new System.Windows.Forms.Button();
-            this.btn_calcular = new System.Windows.Forms.Button();
-            this.btn_resta = new System.Windows.Forms.Button();
-            this.btn_multiplicacion = new System.Windows.Forms.Button();
-            this.btn_division = new System.Windows.Forms.Button();
-            this.btn_num9 = new System.Windows.Forms.Button();
-            this.btn_num6 = new System.Windows.Forms.Button();
-            this.btn_num3 = new System.Windows.Forms.Button();
-            this.btn_suma = new System.Windows.Forms.Button();
-            this.btn_num8 = new System.Windows.Forms.Button();
-            this.btn_num5 = new System.Windows.Forms.Button();
-            this.btn_num2 = new System.Windows.Forms.Button();
+            // ── Controles ───
+            this.pnl_calc = new System.Windows.Forms.Panel();
+            this.pnl_display = new System.Windows.Forms.Panel();
+            this.lbl_expresion = new System.Windows.Forms.Label();
             this.txt_resultado = new System.Windows.Forms.TextBox();
+            this.pnl_botones = new System.Windows.Forms.Panel();
+
+            // Fila AC / +- / % / ÷
+            this.btn_reset = new System.Windows.Forms.Button();
+            this.btn_signo = new System.Windows.Forms.Button();
+            this.btn_porcentaje = new System.Windows.Forms.Button();
+            this.btn_division = new System.Windows.Forms.Button();
+
+            // Fila √ / x² / 1/x / ×
+            this.btn_raiz = new System.Windows.Forms.Button();
+            this.btn_cuadrado = new System.Windows.Forms.Button();
+            this.btn_inverso = new System.Windows.Forms.Button();
+            this.btn_multiplicacion = new System.Windows.Forms.Button();
+
+            // Fila 7 / 8 / 9 / −
             this.btn_num7 = new System.Windows.Forms.Button();
+            this.btn_num8 = new System.Windows.Forms.Button();
+            this.btn_num9 = new System.Windows.Forms.Button();
+            this.btn_resta = new System.Windows.Forms.Button();
+
+            // Fila 4 / 5 / 6 / +
             this.btn_num4 = new System.Windows.Forms.Button();
+            this.btn_num5 = new System.Windows.Forms.Button();
+            this.btn_num6 = new System.Windows.Forms.Button();
+            this.btn_suma = new System.Windows.Forms.Button();
+
+            // Fila 1 / 2 / 3 / = (span 2 filas)
             this.btn_num1 = new System.Windows.Forms.Button();
+            this.btn_num2 = new System.Windows.Forms.Button();
+            this.btn_num3 = new System.Windows.Forms.Button();
+            this.btn_calcular = new System.Windows.Forms.Button();
+
+            // Fila 0 (ancho doble) / .
             this.btn_num0 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.btn_punto = new System.Windows.Forms.Button();
+
+            // Panel historial
+            this.pnl_historial = new System.Windows.Forms.Panel();
+            this.lbl_historial_titulo = new System.Windows.Forms.Label();
+            this.lst_historial = new System.Windows.Forms.ListBox();
+            this.btn_limpiarHistorial = new System.Windows.Forms.Button();
+
+            this.pnl_calc.SuspendLayout();
+            this.pnl_display.SuspendLayout();
+            this.pnl_botones.SuspendLayout();
+            this.pnl_historial.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DimGray;
-            this.panel1.Controls.Add(this.btn_reset);
-            this.panel1.Controls.Add(this.btn_suma);
-            this.panel1.Controls.Add(this.btn_calcular);
-            this.panel1.Controls.Add(this.btn_resta);
-            this.panel1.Controls.Add(this.btn_multiplicacion);
-            this.panel1.Controls.Add(this.btn_division);
-            this.panel1.Controls.Add(this.btn_num9);
-            this.panel1.Controls.Add(this.btn_num6);
-            this.panel1.Controls.Add(this.btn_num3);
-            this.panel1.Controls.Add(this.btn_num8);
-            this.panel1.Controls.Add(this.btn_num5);
-            this.panel1.Controls.Add(this.btn_num2);
-            this.panel1.Controls.Add(this.txt_resultado);
-            this.panel1.Controls.Add(this.btn_num7);
-            this.panel1.Controls.Add(this.btn_num4);
-            this.panel1.Controls.Add(this.btn_num1);
-            this.panel1.Controls.Add(this.btn_num0);
-            this.panel1.Location = new System.Drawing.Point(252, 28);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(355, 399);
-            this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // btn_reset
-            // 
-            this.btn_reset.Location = new System.Drawing.Point(250, 124);
-            this.btn_reset.Name = "btn_reset";
-            this.btn_reset.Size = new System.Drawing.Size(78, 46);
-            this.btn_reset.TabIndex = 17;
-            this.btn_reset.Text = "AC";
-            this.btn_reset.UseVisualStyleBackColor = true;
-            this.btn_reset.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // btn_calcular
-            // 
-            this.btn_calcular.Location = new System.Drawing.Point(99, 321);
-            this.btn_calcular.Name = "btn_calcular";
-            this.btn_calcular.Size = new System.Drawing.Size(130, 62);
-            this.btn_calcular.TabIndex = 16;
-            this.btn_calcular.Text = "=";
-            this.btn_calcular.UseVisualStyleBackColor = true;
-            this.btn_calcular.Click += new System.EventHandler(this.btn_calcular_Click);
-            // 
-            // btn_resta
-            // 
-            this.btn_resta.Location = new System.Drawing.Point(250, 277);
-            this.btn_resta.Name = "btn_resta";
-            this.btn_resta.Size = new System.Drawing.Size(78, 48);
-            this.btn_resta.TabIndex = 15;
-            this.btn_resta.Text = "-";
-            this.btn_resta.UseVisualStyleBackColor = true;
-            this.btn_resta.Click += new System.EventHandler(this.btn_resta_Click);
-            // 
-            // btn_multiplicacion
-            // 
-            this.btn_multiplicacion.Location = new System.Drawing.Point(250, 228);
-            this.btn_multiplicacion.Name = "btn_multiplicacion";
-            this.btn_multiplicacion.Size = new System.Drawing.Size(78, 43);
-            this.btn_multiplicacion.TabIndex = 14;
-            this.btn_multiplicacion.Text = "X";
-            this.btn_multiplicacion.UseVisualStyleBackColor = true;
-            this.btn_multiplicacion.Click += new System.EventHandler(this.btn_multiplicacion_Click);
-            // 
-            // btn_division
-            // 
-            this.btn_division.Location = new System.Drawing.Point(250, 176);
-            this.btn_division.Name = "btn_division";
-            this.btn_division.Size = new System.Drawing.Size(78, 46);
-            this.btn_division.TabIndex = 13;
-            this.btn_division.Text = "/";
-            this.btn_division.UseVisualStyleBackColor = true;
-            this.btn_division.Click += new System.EventHandler(this.btn_division_Click);
-            // 
-            // btn_num9
-            // 
-            this.btn_num9.Location = new System.Drawing.Point(168, 120);
-            this.btn_num9.Name = "btn_num9";
-            this.btn_num9.Size = new System.Drawing.Size(61, 61);
-            this.btn_num9.TabIndex = 12;
-            this.btn_num9.Text = "9";
-            this.btn_num9.UseVisualStyleBackColor = true;
-            this.btn_num9.Click += new System.EventHandler(this.btn_num9_Click);
-            // 
-            // btn_num6
-            // 
-            this.btn_num6.Location = new System.Drawing.Point(168, 187);
-            this.btn_num6.Name = "btn_num6";
-            this.btn_num6.Size = new System.Drawing.Size(61, 60);
-            this.btn_num6.TabIndex = 11;
-            this.btn_num6.Text = "6";
-            this.btn_num6.UseVisualStyleBackColor = true;
-            this.btn_num6.Click += new System.EventHandler(this.btn_num6_Click);
-            // 
-            // btn_num3
-            // 
-            this.btn_num3.Location = new System.Drawing.Point(167, 254);
-            this.btn_num3.Name = "btn_num3";
-            this.btn_num3.Size = new System.Drawing.Size(62, 61);
-            this.btn_num3.TabIndex = 10;
-            this.btn_num3.Text = "3";
-            this.btn_num3.UseVisualStyleBackColor = true;
-            this.btn_num3.Click += new System.EventHandler(this.btn_num3_Click);
-            // 
-            // btn_suma
-            // 
-            this.btn_suma.Location = new System.Drawing.Point(250, 331);
-            this.btn_suma.Name = "btn_suma";
-            this.btn_suma.Size = new System.Drawing.Size(78, 48);
-            this.btn_suma.TabIndex = 9;
-            this.btn_suma.Text = "+";
-            this.btn_suma.UseVisualStyleBackColor = true;
-            this.btn_suma.Click += new System.EventHandler(this.btn_suma_Click);
-            // 
-            // btn_num8
-            // 
-            this.btn_num8.Location = new System.Drawing.Point(99, 120);
-            this.btn_num8.Name = "btn_num8";
-            this.btn_num8.Size = new System.Drawing.Size(62, 61);
-            this.btn_num8.TabIndex = 8;
-            this.btn_num8.Text = "8";
-            this.btn_num8.UseVisualStyleBackColor = true;
-            this.btn_num8.Click += new System.EventHandler(this.btn_num8_Click);
-            // 
-            // btn_num5
-            // 
-            this.btn_num5.Location = new System.Drawing.Point(99, 187);
-            this.btn_num5.Name = "btn_num5";
-            this.btn_num5.Size = new System.Drawing.Size(62, 61);
-            this.btn_num5.TabIndex = 7;
-            this.btn_num5.Text = "5";
-            this.btn_num5.UseVisualStyleBackColor = true;
-            this.btn_num5.Click += new System.EventHandler(this.btn_num5_Click);
-            // 
-            // btn_num2
-            // 
-            this.btn_num2.Location = new System.Drawing.Point(99, 254);
-            this.btn_num2.Name = "btn_num2";
-            this.btn_num2.Size = new System.Drawing.Size(62, 61);
-            this.btn_num2.TabIndex = 6;
-            this.btn_num2.Text = "2";
-            this.btn_num2.UseVisualStyleBackColor = true;
-            this.btn_num2.Click += new System.EventHandler(this.btn_num2_Click);
-            // 
-            // txt_resultado
-            // 
-            this.txt_resultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_resultado.Location = new System.Drawing.Point(31, 15);
-            this.txt_resultado.Multiline = true;
-            this.txt_resultado.Name = "txt_resultado";
-            this.txt_resultado.Size = new System.Drawing.Size(297, 90);
-            this.txt_resultado.TabIndex = 4;
-            // 
-            // btn_num7
-            // 
-            this.btn_num7.Location = new System.Drawing.Point(31, 120);
-            this.btn_num7.Name = "btn_num7";
-            this.btn_num7.Size = new System.Drawing.Size(62, 61);
-            this.btn_num7.TabIndex = 3;
-            this.btn_num7.Text = "7";
-            this.btn_num7.UseVisualStyleBackColor = true;
-            this.btn_num7.Click += new System.EventHandler(this.btn_num7_Click);
-            // 
-            // btn_num4
-            // 
-            this.btn_num4.Location = new System.Drawing.Point(31, 187);
-            this.btn_num4.Name = "btn_num4";
-            this.btn_num4.Size = new System.Drawing.Size(62, 61);
-            this.btn_num4.TabIndex = 2;
-            this.btn_num4.Text = "4";
-            this.btn_num4.UseVisualStyleBackColor = true;
-            this.btn_num4.Click += new System.EventHandler(this.btn_num4_Click);
-            // 
-            // btn_num1
-            // 
-            this.btn_num1.Location = new System.Drawing.Point(31, 254);
-            this.btn_num1.Name = "btn_num1";
-            this.btn_num1.Size = new System.Drawing.Size(62, 61);
-            this.btn_num1.TabIndex = 1;
-            this.btn_num1.Text = "1";
-            this.btn_num1.UseVisualStyleBackColor = true;
-            this.btn_num1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btn_num0
-            // 
-            this.btn_num0.Location = new System.Drawing.Point(31, 321);
-            this.btn_num0.Name = "btn_num0";
-            this.btn_num0.Size = new System.Drawing.Size(62, 61);
-            this.btn_num0.TabIndex = 0;
-            this.btn_num0.Text = "0";
-            this.btn_num0.UseVisualStyleBackColor = true;
-            this.btn_num0.Click += new System.EventHandler(this.btn_num0_Click);
-            // 
-            // Form1
-            // 
+
+            // ── Colores comunes ───
+            System.Drawing.Color bgCalc = System.Drawing.Color.FromArgb(30, 30, 46);
+            System.Drawing.Color bgDisplay = System.Drawing.Color.FromArgb(19, 19, 31);
+            System.Drawing.Color bgNum = System.Drawing.Color.FromArgb(42, 42, 62);
+            System.Drawing.Color bgOp = System.Drawing.Color.FromArgb(58, 58, 92);
+            System.Drawing.Color bgFn = System.Drawing.Color.FromArgb(35, 55, 40);
+            System.Drawing.Color bgAC = System.Drawing.Color.FromArgb(90, 40, 40);
+            System.Drawing.Color bgEq = System.Drawing.Color.FromArgb(92, 77, 177);
+            System.Drawing.Color fgNum = System.Drawing.Color.FromArgb(224, 224, 255);
+            System.Drawing.Color fgOp = System.Drawing.Color.FromArgb(160, 160, 255);
+            System.Drawing.Color fgFn = System.Drawing.Color.FromArgb(126, 200, 126);
+            System.Drawing.Color fgAC = System.Drawing.Color.FromArgb(255, 128, 128);
+
+            System.Drawing.Font fontBtn = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular);
+            System.Drawing.Font fontBtnSm = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular);
+
+            // ── Form1 ───
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(760, 520);
+            this.Text = "Calculadora";
+            this.BackColor = System.Drawing.Color.FromArgb(22, 22, 35);
+            this.MinimumSize = new System.Drawing.Size(780, 560);
+            this.Controls.Add(this.pnl_calc);
+            this.Controls.Add(this.pnl_historial);
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
 
+            // ── pnl_calc (panel izquierdo de la calculadora) ───
+            this.pnl_calc.BackColor = bgCalc;
+            this.pnl_calc.Location = new System.Drawing.Point(12, 12);
+            this.pnl_calc.Size = new System.Drawing.Size(348, 496);
+            this.pnl_calc.Controls.Add(this.pnl_display);
+            this.pnl_calc.Controls.Add(this.pnl_botones);
+            this.pnl_calc.Anchor = System.Windows.Forms.AnchorStyles.Top
+                                 | System.Windows.Forms.AnchorStyles.Left
+                                 | System.Windows.Forms.AnchorStyles.Bottom;
+
+            // ── pnl_display ───
+            this.pnl_display.BackColor = bgDisplay;
+            this.pnl_display.Location = new System.Drawing.Point(10, 10);
+            this.pnl_display.Size = new System.Drawing.Size(328, 90);
+            this.pnl_display.Controls.Add(this.lbl_expresion);
+            this.pnl_display.Controls.Add(this.txt_resultado);
+
+            this.lbl_expresion.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lbl_expresion.ForeColor = System.Drawing.Color.FromArgb(136, 136, 136);
+            this.lbl_expresion.Location = new System.Drawing.Point(8, 6);
+            this.lbl_expresion.Size = new System.Drawing.Size(310, 20);
+            this.lbl_expresion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_expresion.Name = "lbl_expresion";
+
+            this.txt_resultado.BackColor = bgDisplay;
+            this.txt_resultado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_resultado.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Regular);
+            this.txt_resultado.ForeColor = System.Drawing.Color.White;
+            this.txt_resultado.Location = new System.Drawing.Point(6, 28);
+            this.txt_resultado.Size = new System.Drawing.Size(316, 54);
+            this.txt_resultado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_resultado.Name = "txt_resultado";
+
+            // ── pnl_botones ───
+            this.pnl_botones.BackColor = bgCalc;
+            this.pnl_botones.Location = new System.Drawing.Point(10, 108);
+            this.pnl_botones.Size = new System.Drawing.Size(328, 380);
+            // TableLayoutPanel sería ideal, aquí usamos posicionamiento manual
+            // para mantener compatibilidad directa con el diseñador existente.
+
+            int bw = 74, bh = 58, gap = 6, startX = 0, startY = 0;
+
+            System.Action<System.Windows.Forms.Button, string, int, int, int, int,
+                System.Drawing.Color, System.Drawing.Color, System.Drawing.Font,
+                System.EventHandler> cfg = (btn, txt, col, row, colSpan, rowSpan,
+                bg, fg, fnt, handler) =>
+                {
+                    btn.Text = txt;
+                    btn.BackColor = bg;
+                    btn.ForeColor = fg;
+                    btn.Font = fnt;
+                    btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+                    btn.FlatAppearance.BorderSize = 0;
+                    btn.Location = new System.Drawing.Point(startX + col * (bw + gap),
+                                                             startY + row * (bh + gap));
+                    btn.Size = new System.Drawing.Size(bw * colSpan + gap * (colSpan - 1),
+                                                            bh * rowSpan + gap * (rowSpan - 1));
+                    btn.Cursor = System.Windows.Forms.Cursors.Hand;
+                    btn.Click += handler;
+                    this.pnl_botones.Controls.Add(btn);
+                };
+
+            // Fila 0
+            cfg(btn_reset, "AC", 0, 0, 1, 1, bgAC, fgAC, fontBtn, new System.EventHandler(this.btn_reset_Click));
+            cfg(btn_signo, "+/−", 1, 0, 1, 1, bgFn, fgFn, fontBtnSm, new System.EventHandler(this.btn_signo_Click));
+            cfg(btn_porcentaje, "%", 2, 0, 1, 1, bgFn, fgFn, fontBtn, new System.EventHandler(this.btn_porcentaje_Click));
+            cfg(btn_division, "÷", 3, 0, 1, 1, bgOp, fgOp, fontBtn, new System.EventHandler(this.btn_division_Click));
+
+            // Fila 1
+            cfg(btn_raiz, "√x", 0, 1, 1, 1, bgFn, fgFn, fontBtnSm, new System.EventHandler(this.btn_raiz_Click));
+            cfg(btn_cuadrado, "x²", 1, 1, 1, 1, bgFn, fgFn, fontBtnSm, new System.EventHandler(this.btn_cuadrado_Click));
+            cfg(btn_inverso, "1/x", 2, 1, 1, 1, bgFn, fgFn, fontBtnSm, new System.EventHandler(this.btn_inverso_Click));
+            cfg(btn_multiplicacion, "×", 3, 1, 1, 1, bgOp, fgOp, fontBtn, new System.EventHandler(this.btn_multiplicacion_Click));
+
+            // Fila 2
+            cfg(btn_num7, "7", 0, 2, 1, 1, bgNum, fgNum, fontBtn, new System.EventHandler(this.btn_num7_Click));
+            cfg(btn_num8, "8", 1, 2, 1, 1, bgNum, fgNum, fontBtn, new System.EventHandler(this.btn_num8_Click));
+            cfg(btn_num9, "9", 2, 2, 1, 1, bgNum, fgNum, fontBtn, new System.EventHandler(this.btn_num9_Click));
+            cfg(btn_resta, "−", 3, 2, 1, 1, bgOp, fgOp, fontBtn, new System.EventHandler(this.btn_resta_Click));
+
+            // Fila 3
+            cfg(btn_num4, "4", 0, 3, 1, 1, bgNum, fgNum, fontBtn, new System.EventHandler(this.btn_num4_Click));
+            cfg(btn_num5, "5", 1, 3, 1, 1, bgNum, fgNum, fontBtn, new System.EventHandler(this.btn_num5_Click));
+            cfg(btn_num6, "6", 2, 3, 1, 1, bgNum, fgNum, fontBtn, new System.EventHandler(this.btn_num6_Click));
+            cfg(btn_suma, "+", 3, 3, 1, 1, bgOp, fgOp, fontBtn, new System.EventHandler(this.btn_suma_Click));
+
+            // Fila 4 — el "=" ocupa 2 filas
+            cfg(btn_num1, "1", 0, 4, 1, 1, bgNum, fgNum, fontBtn, new System.EventHandler(this.btn_num1_Click));
+            cfg(btn_num2, "2", 1, 4, 1, 1, bgNum, fgNum, fontBtn, new System.EventHandler(this.btn_num2_Click));
+            cfg(btn_num3, "3", 2, 4, 1, 1, bgNum, fgNum, fontBtn, new System.EventHandler(this.btn_num3_Click));
+            cfg(btn_calcular, "=", 3, 4, 1, 2, bgEq, System.Drawing.Color.White, fontBtn, new System.EventHandler(this.btn_calcular_Click));
+
+            // Fila 5
+            cfg(btn_num0, "0", 0, 5, 2, 1, bgNum, fgNum, fontBtn, new System.EventHandler(this.btn_num0_Click));
+            cfg(btn_punto, ".", 2, 5, 1, 1, bgNum, fgNum, fontBtn, new System.EventHandler(this.btn_punto_Click));
+
+            // ── pnl_historial ───
+            this.pnl_historial.BackColor = System.Drawing.Color.FromArgb(26, 26, 40);
+            this.pnl_historial.Location = new System.Drawing.Point(372, 12);
+            this.pnl_historial.Size = new System.Drawing.Size(376, 496);
+            this.pnl_historial.Anchor = System.Windows.Forms.AnchorStyles.Top
+                                         | System.Windows.Forms.AnchorStyles.Right
+                                         | System.Windows.Forms.AnchorStyles.Bottom;
+            this.pnl_historial.Controls.Add(this.lbl_historial_titulo);
+            this.pnl_historial.Controls.Add(this.btn_limpiarHistorial);
+            this.pnl_historial.Controls.Add(this.lst_historial);
+
+            this.lbl_historial_titulo.Text = "Historial";
+            this.lbl_historial_titulo.ForeColor = System.Drawing.Color.FromArgb(180, 180, 220);
+            this.lbl_historial_titulo.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lbl_historial_titulo.Location = new System.Drawing.Point(12, 12);
+            this.lbl_historial_titulo.Size = new System.Drawing.Size(200, 26);
+            this.lbl_historial_titulo.Name = "lbl_historial_titulo";
+
+            this.btn_limpiarHistorial.Text = "Limpiar";
+            this.btn_limpiarHistorial.ForeColor = System.Drawing.Color.FromArgb(200, 100, 100);
+            this.btn_limpiarHistorial.BackColor = System.Drawing.Color.FromArgb(60, 35, 35);
+            this.btn_limpiarHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_limpiarHistorial.FlatAppearance.BorderSize = 0;
+            this.btn_limpiarHistorial.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.btn_limpiarHistorial.Location = new System.Drawing.Point(290, 12);
+            this.btn_limpiarHistorial.Size = new System.Drawing.Size(74, 26);
+            this.btn_limpiarHistorial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_limpiarHistorial.Name = "btn_limpiarHistorial";
+            this.btn_limpiarHistorial.Click += new System.EventHandler(this.btn_limpiarHistorial_Click);
+
+            this.lst_historial.BackColor = System.Drawing.Color.FromArgb(22, 22, 35);
+            this.lst_historial.ForeColor = System.Drawing.Color.FromArgb(200, 200, 230);
+            this.lst_historial.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lst_historial.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lst_historial.Location = new System.Drawing.Point(0, 46);
+            this.lst_historial.Size = new System.Drawing.Size(376, 450);
+            this.lst_historial.Name = "lst_historial";
+            this.lst_historial.ScrollAlwaysVisible = false;
+            this.lst_historial.DoubleClick += new System.EventHandler(this.lst_historial_DoubleClick);
+
+            this.pnl_calc.ResumeLayout(false);
+            this.pnl_display.ResumeLayout(false);
+            this.pnl_botones.ResumeLayout(false);
+            this.pnl_historial.ResumeLayout(false);
+            this.ResumeLayout(false);
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btn_num0;
-        private System.Windows.Forms.Button btn_num1;
-        private System.Windows.Forms.Button btn_num4;
-        private System.Windows.Forms.Button btn_num7;
-        private System.Windows.Forms.Button btn_num2;
+        // ── Declaraciones de controles ───
+        private System.Windows.Forms.Panel pnl_calc;
+        private System.Windows.Forms.Panel pnl_display;
+        private System.Windows.Forms.Label lbl_expresion;
         private System.Windows.Forms.TextBox txt_resultado;
-        private System.Windows.Forms.Button btn_division;
-        private System.Windows.Forms.Button btn_num9;
-        private System.Windows.Forms.Button btn_num6;
-        private System.Windows.Forms.Button btn_num3;
-        private System.Windows.Forms.Button btn_suma;
-        private System.Windows.Forms.Button btn_num8;
-        private System.Windows.Forms.Button btn_num5;
-        private System.Windows.Forms.Button btn_calcular;
-        private System.Windows.Forms.Button btn_resta;
-        private System.Windows.Forms.Button btn_multiplicacion;
+        private System.Windows.Forms.Panel pnl_botones;
+
         private System.Windows.Forms.Button btn_reset;
+        private System.Windows.Forms.Button btn_signo;
+        private System.Windows.Forms.Button btn_porcentaje;
+        private System.Windows.Forms.Button btn_division;
+
+        private System.Windows.Forms.Button btn_raiz;
+        private System.Windows.Forms.Button btn_cuadrado;
+        private System.Windows.Forms.Button btn_inverso;
+        private System.Windows.Forms.Button btn_multiplicacion;
+
+        private System.Windows.Forms.Button btn_num7;
+        private System.Windows.Forms.Button btn_num8;
+        private System.Windows.Forms.Button btn_num9;
+        private System.Windows.Forms.Button btn_resta;
+
+        private System.Windows.Forms.Button btn_num4;
+        private System.Windows.Forms.Button btn_num5;
+        private System.Windows.Forms.Button btn_num6;
+        private System.Windows.Forms.Button btn_suma;
+
+        private System.Windows.Forms.Button btn_num1;
+        private System.Windows.Forms.Button btn_num2;
+        private System.Windows.Forms.Button btn_num3;
+        private System.Windows.Forms.Button btn_calcular;
+
+        private System.Windows.Forms.Button btn_num0;
+        private System.Windows.Forms.Button btn_punto;
+
+        private System.Windows.Forms.Panel pnl_historial;
+        private System.Windows.Forms.Label lbl_historial_titulo;
+        private System.Windows.Forms.ListBox lst_historial;
+        private System.Windows.Forms.Button btn_limpiarHistorial;
     }
 }
-
