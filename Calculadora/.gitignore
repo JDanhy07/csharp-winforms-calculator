@@ -1,0 +1,24 @@
+# Ignorar carpetas de compilación
+bin/
+obj/
+
+# Ignorar configuración de Visual Studio
+.vs/
+*.user
+*.suo
+*.userprefs
+
+# Ignorar archivos temporales
+*.cache
+*.tmp
+*.log
+*.pid
+*.seed
+
+# ReSharper
+_ReSharper.Caches/
+*.DotSettings.user
+
+# Ignorar respaldos de Windows
+Thumbs.db
+Desktop.ini
