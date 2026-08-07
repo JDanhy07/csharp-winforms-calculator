@@ -66,7 +66,7 @@ Calculadora/
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/jdanhy07/calculadora.git
+   git clone https://github.com/JDanhy07/calculadora.git
    ```
 
 2. Abre la solución en Visual Studio:
