@@ -107,13 +107,4 @@ Calculadora/
 
 ---
 
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Para cambios importantes, abre primero un *issue* describiendo lo que deseas modificar.
-
-1. Haz un fork del repositorio
-2. Crea una rama: `git checkout -b feature/nueva-funcionalidad`
-3. Realiza tus cambios y haz commit: `git commit -m "Agrega nueva funcionalidad"`
-4. Sube la rama: `git push origin feature/nueva-funcionalidad`
-5. Abre un Pull Request
 
